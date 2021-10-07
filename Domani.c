@@ -6,7 +6,8 @@ int main(){
     printf("Inserisci anno: ");
     scanf("%d", &anno);
 
-    if(anno%4==0){
+    //si poteva anche usare OR oppure AND
+    if(anno%4==0){ 
         if(anno%100==0)
             printf("\nL'anno non e' bisestile\n");
         else
