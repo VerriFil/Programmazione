@@ -1,4 +1,2 @@
 # Programmazione
-zjnvosdiv
-ciao ciao ciao 
-ciu ciu
+Roba, non so che dire
