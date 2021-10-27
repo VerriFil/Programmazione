@@ -2,7 +2,7 @@
 
 int main(){
 
-    int a=0, b=0, mcm=0, j; //j==box
+    int a=0, b=0, j; //j==mcm
 
     printf("Inserisci il primo numero primo: ");
     scanf("%d", &a);
