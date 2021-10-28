@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+//programma malfunzionante......sistemalo
 int gGiuliano(int g, int m, int a){
     //non comprendon i calcoli, ho copiato dal prof
     int N0, N1, N2, N3;
