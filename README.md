@@ -1,2 +1,2 @@
 # Programmazione
-Roba, non so che dire
+Programmazione che utilizza il linguaggio C
