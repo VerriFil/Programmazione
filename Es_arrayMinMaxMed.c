@@ -1,6 +1,8 @@
 #include<stdio.h>
 #define DIM 100
 
+//da problemi....risolvere
+
 int main(){
 
     int num[DIM], cnt=0, i=0;
