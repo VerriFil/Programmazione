@@ -8,6 +8,14 @@ int rnd_int(int a, int b)
 
 int main()
 {
+    /*  r:N->N
+        r1 fisso SEED
+        r2=f(r1)
+        r3=f(r2)
+        rn=f(rn-1)*/
+    //rand utilizza lo stesso seme, quindi ogni sequenza è uguale,
+    //srand cambia il seme ogni volta, permettendo a rand di
+    //essere casuale
     //inizializzazione della stringa
     char s[37] = "https://meet.google.com/xxx-xxxx-xxx";
     int i, n;
