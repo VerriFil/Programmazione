@@ -29,13 +29,32 @@ void fraz(int n, int d, Frazione *pf) //con il *pf non serve restituire qualcosa
     int m = MCD(valAssoluto(n), valAssoluto(d));
     (*pf).num = n / m;
     (*pf).den = d / m;
+    //equivalgono a tra loro
+    //pf->num = n/m;
+    //pf->den = d/m;
+}
+
+void stampa(Frazione *pf)
+{
+    printf("%d/%d\n", pf->num, pf->den);
+}
+
+void leggiFraz(Frazione *pf)
+{
+    /*printf("Inserisci il Numeratore: ");
+    scanf("%d", &pf->num);
+    printf("\nInserisci il Numeratore: ");
+    scanf("%d", &pf->den);*/
+    //metodo alternativo
+    scanf("%d%d", &pf->num, &pf->den);
 }
 
 int main()
 {
     Frazione g;
-    fraz(4, 6, &g); //non serve fare 'g=...' perchè usiamo i puntatori
-    printf("%d / %d\n", g.num, g.den);
+    leggiFraz(&g);
+    fraz(g.num, g.den, &g); //non serve fare 'g=...' perchè usiamo i puntatori
+    stampa(&g);             //usando la & passiamo l'indirizzo di g
 
     return 0;
 }
