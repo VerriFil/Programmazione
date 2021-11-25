@@ -49,12 +49,19 @@ void leggiFraz(Frazione *pf)
     scanf("%d%d", &pf->num, &pf->den);
 }
 
+int somma(Frazione f1, Frazione f2, Frazione *pf)
+{
+    fraz(f1.num * f2.den + f1.den * f2.num, f1.den * f2.den, pf);
+}
+
 int main()
 {
-    Frazione g;
+    Frazione g, g2, g3;
     leggiFraz(&g);
-    fraz(g.num, g.den, &g); //non serve fare 'g=...' perchè usiamo i puntatori
-    stampa(&g);             //usando la & passiamo l'indirizzo di g
+    leggiFraz(&g2);
+    //fraz(g.num, g.den, &g); //non serve fare 'g=...' perchè usiamo i puntatori
+    somma(g, g2, &g3); //usando la & passiamo l'indirizzo di g
+    stampa(&g3);
 
     return 0;
 }
