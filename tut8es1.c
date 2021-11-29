@@ -23,7 +23,7 @@ int occorrenza(int *a, int dim, int *elmPiuRipetuto){
 	*elmPiuRipetuto=valRip;
 	return cnmax;
 	
-  /*se creiamo un array di dimensione dim possiamo inserire nelle celle
+      /*se creiamo un array di dimensione dim possiamo inserire nelle celle
 	i valori di ripetizione e utilizzare il valore della i per indicare 
 	il valore ripetuto */
 }
